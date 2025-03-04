@@ -51,11 +51,14 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 8px var(--shadow-color);
     max-width: 350px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent; /* Default transparent border */
 }
 
 .card:hover {
     transform: translateY(-5px);
+    border: 2px solid var(--accent-color); /* Orange outline */
+    box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 .card h2 {
